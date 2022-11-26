@@ -26,6 +26,9 @@
                    </div>
                    <div class="suggestion-detail-text">
                        <div class="fw-bold mb-2 suggestion-detail-suggestion">@suggestion.Suggestion</div>
+                       <div>
+                           <img src="@suggestion.OwnerNotes" width="200" height="200">
+                       </div>
                        <div class="mb-2 suggestion-detail-author">@suggestion.Author.DisplayName</div>
                        <div class="mb-2 d-none d-md-block">@suggestion.Description</div>
                        <div class="suggestion-entry-text-category d-none d-md-block">
@@ -56,9 +59,7 @@
                 <div class="suggestion-detail-status fw-bold mb-2 suggestion-detail-suggestion">
                     @suggestion.SuggestionStatus.StatusName
                 </div>
-                <div class="suggestion-detail-owner-notes">
-                    @((MarkupString)suggestion.OwnerNotes)
-                </div>
+                
             </div>
         </div>
     </div>
